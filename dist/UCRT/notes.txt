@@ -1,0 +1,4 @@
+windows 8 rt is actual windows 8
+windows 8.1 is actual windows 8,1	
+6.1 is 7 and 6.0 is vista
+installers are same for server OS

@@ -28,6 +28,31 @@ Section "Windows Imaging Component (.net 4.0 prerequisite for older OS)" SEC_WIC
 done:
 SectionEnd
 
+Section "KB2999226 (prerequisite for installing C++ 2015 runtime on vista-win8.1)" SEC_KB2999226
+  SetOutPath "$TEMP"
+  File "dist\UCRT\Windows6.0-KB2999226-x64.msu"
+  File "dist\UCRT\Windows6.0-KB2999226-x86.msu"
+  File "dist\UCRT\Windows6.1-KB2999226-x64.msu"
+  File "dist\UCRT\Windows6.1-KB2999226-x86.msu"
+  File "dist\UCRT\Windows8.1-KB2999226-x64.msu"
+  File "dist\UCRT\Windows8.1-KB2999226-x86.msu"
+  File "dist\UCRT\Windows8-RT-KB2999226-x64.msu"
+  File "dist\UCRT\Windows8-RT-KB2999226-x86.msu"
+
+  DetailPrint "Trying to install 8x KB2999226 for various platforms."
+  ExecWait 'wusa.exe "dist\UCRT\Windows6.0-KB2999226-x64.msu" /quiet /norestart'
+  ExecWait 'wusa.exe "dist\UCRT\Windows6.0-KB2999226-x86.msu" /quiet /norestart'
+  ExecWait 'wusa.exe "dist\UCRT\Windows6.1-KB2999226-x64.msu" /quiet /norestart'
+  ExecWait 'wusa.exe "dist\UCRT\Windows6.1-KB2999226-x86.msu" /quiet /norestart'
+  ExecWait 'wusa.exe "dist\UCRT\Windows8.1-KB2999226-x64.msu" /quiet /norestart'
+  ExecWait 'wusa.exe "dist\UCRT\Windows8.1-KB2999226-x86.msu" /quiet /norestart'
+  ExecWait 'wusa.exe "dist\UCRT\Windows8-RT-KB2999226-x64.msu" /quiet /norestart'
+  ExecWait 'wusa.exe "dist\UCRT\Windows8-RT-KB2999226-x86.msu" /quiet /norestart'
+  DetailPrint "Finished KB2999226"
+
+done:
+SectionEnd
+
 Section "Microsoft Visual C++ 2010 SP1 Runtime" SEC_CRT2010_SP1
 
   SetOutPath "$TEMP"

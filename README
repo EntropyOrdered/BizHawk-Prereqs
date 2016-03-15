@@ -1,3 +1,6 @@
+BizHawk is supported on operating systems as old as Windows XP 32-bit.
+If BizHawk crashes when you run it, it is probably because you are lacking some of the prerequisites
+
 KB2999226 (prerequisite for installing C++ 2015 runtime on vista-win8.1)
 Windows Imaging Component (.net 4.0 prerequisite for older OS)
 Visual C++ 2010 SP1 Runtime
@@ -6,5 +9,3 @@ Visual C++ 2015 Runtime
 Visual C++ 2015 Runtime (x64)
 .Net Framework v4.0.30319
 DirectX Web Update (DirectX 9 is employed)
-
-Stay online while installing this. You're advised to be fully windows-updated before beginning, although under the circumstances, it's hard to blame anyone for shutting it off.

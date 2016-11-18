@@ -5,6 +5,8 @@ Visual C++ 2010 SP1 Runtime (x64)
 Visual C++ 2015 Runtime
 Visual C++ 2015 Runtime (x64)
 .Net Framework v4.0.30319
-DirectX Web Update (DirectX 9 is employed)
+DirectX Installer  (since the Web Update fails sometimes; 
+                   (includes D3DX9 31 and 43, XInput, and XAudio)
+DirectX Web Update (installs dozens of packages, or maybe none, luck of the draw really)
 
 Stay online while installing this. You're advised to be fully windows-updated before beginning, although under the circumstances, it's hard to blame anyone for shutting it off.

@@ -121,7 +121,24 @@ Section "MS .NET Framework v${NETVersion}" SecFramework
  
 SectionEnd
 
-Section "DirectX Web Setup" SEC_DIRECTX
+Section "DirectX Setup" SEC_DIRECTX
+                                                                              
+ ;SectionIn RO
+
+ SetOutPath "$TEMP"
+ File "dist\DirectX.exe"
+ DetailPrint "Running DirectX Setup (just in case web setup isn't going to work)..."
+ RMDir /r "$TEMP\bizphrack-dxsetup"                                                                             
+ ExecWait '"$TEMP\DirectX.exe" /S'
+ 
+ Delete "$TEMP\DirectX.exe"
+ RMDir /r "$TEMP\bizphrack-dxsetup"
+
+ DetailPrint "Finished DirectX Setup"                                     
+
+SectionEnd
+
+Section "DirectX Web Setup" SEC_DIRECTXWEB
                                                                               
  ;SectionIn RO
 

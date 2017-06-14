@@ -1,10 +1,8 @@
 KB2999226 (prerequisite for installing C++ 2015 runtime on vista-win8.1)
-Windows Imaging Component (.net 4.0 prerequisite for older OS)
-Visual C++ 2010 SP1 Runtime
 Visual C++ 2010 SP1 Runtime (x64)
-Visual C++ 2015 Runtime
+Visual C++ 2013 Runtime (x64)
 Visual C++ 2015 Runtime (x64)
-.Net Framework v4.0.30319
+.Net Framework v4.6.1
 DirectX Installer  (since the Web Update fails sometimes; 
                    (includes D3DX9 31 and 43, XInput, and XAudio)
 DirectX Web Update (installs dozens of packages, or maybe none, luck of the draw really)

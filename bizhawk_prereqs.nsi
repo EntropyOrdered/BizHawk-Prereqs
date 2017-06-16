@@ -1,14 +1,26 @@
+!include LogicLib.nsh
 !include "MUI2.nsh"
 !include "NsisDotNetChecker\DotNetChecker.nsh"
+
+; Request application privileges for Windows Vista+
+RequestExecutionLevel admin 
+
+Function .onInit
+UserInfo::GetAccountType
+pop $0
+${If} $0 != "admin" ;Require admin rights on NT4+
+        MessageBox mb_iconstop "Administrator rights required!"
+        SetErrorLevel 740 ;ERROR_ELEVATION_REQUIRED
+        Quit
+${EndIf}
+FunctionEnd
+
 
 ; The name of the installer
 Name "BizHawk Prerequisites"
 
 ; The file to write
 OutFile "bizhawk_prereqs.exe"
-
-; The default installation directory
-InstallDir $DESKTOP\Example1
 
 ; Request application privileges for Windows Vista+
 RequestExecutionLevel admin 

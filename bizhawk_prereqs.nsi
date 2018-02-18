@@ -50,9 +50,21 @@ Section "Microsoft Visual C++ 2010 SP1 Runtime (x64)" SEC_CRT2010_SP1_X64
   File "dist\vcredist_2010_sp1_x64.exe"
   DetailPrint "Running Visual C++ 2010 SP1 Runtime (x64) Setup..."
   ExecWait '"$TEMP\vcredist_2010_sp1_x64.exe" /q /promptrestart'
-  DetailPrint "Finished Visual C++ 2010 SP1 (x64) Runtime Setup"
+  DetailPrint "Finished Visual C++ 2010 SP1 Runtime (x64) Runtime Setup"
   
   Delete "$TEMP\vcredist_2010_sp1_x64.exe"
+
+SectionEnd
+
+Section "Microsoft Visual C++ 2012 Runtime Update 4 (x64)" SEC_CRT2012_X64
+
+  SetOutPath "$TEMP"
+  File "dist\vcredist_2012_u4_x64.exe"
+  DetailPrint "Running Visual C++ 2012 Runtime Update 4 (x64) Setup..."
+  ExecWait '"$TEMP\vcredist_2012_u4_x64.exe" /q /promptrestart'
+  DetailPrint "Finished Visual C++ 2012 Runtime Update 4(x64) Runtime Setup"
+  
+  Delete "$TEMP\vcredist_2012_u4_x64.exe"
 
 SectionEnd
 
@@ -62,7 +74,7 @@ Section "Microsoft Visual C++ 2013 Runtime (x64)" SEC_CRT2013_X64
   File "dist\vcredist_2013_x64.exe"
   DetailPrint "Running Visual C++ 2013 Runtime (x64) Setup..."
   ExecWait '"$TEMP\vcredist_2013_x64.exe" /q /promptrestart'
-  DetailPrint "Finished Visual C++ 2013 (x64) Runtime Setup"
+  DetailPrint "Finished Visual C++ 2013 Runtime (x64) Runtime Setup"
   
   Delete "$TEMP\vcredist_2013_x64.exe"
 
@@ -72,9 +84,9 @@ Section "Microsoft Visual C++ 2015 Runtime (x64)" SEC_CRT2015_X64
 
   SetOutPath "$TEMP"
   File "dist\vcredist_2015_x64.exe"
-  DetailPrint "Running Visual C++ 2015 Runtime (x64) Setup..."
+  DetailPrint "Running Visual C++ 2015 Runtime SP1 (x64) Setup..."
   ExecWait '"$TEMP\vcredist_2015_x64.exe" /quiet'
-  DetailPrint "Finished Visual C++ 2015 SP1 (x64) Runtime Setup"
+  DetailPrint "Finished Visual C++ 2015 Runtime SP1 (x64) Runtime Setup"
   
   Delete "$TEMP\vcredist_2015_x64.exe"
 

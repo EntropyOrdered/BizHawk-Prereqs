@@ -56,18 +56,6 @@ Section "Microsoft Visual C++ 2010 SP1 Runtime (x64)" SEC_CRT2010_SP1_X64
 
 SectionEnd
 
-Section "Microsoft Visual C++ 2012 Runtime Update 4 (x64)" SEC_CRT2012_X64
-
-  SetOutPath "$TEMP"
-  File "dist\vcredist_2012_u4_x64.exe"
-  DetailPrint "Running Visual C++ 2012 Runtime Update 4 (x64) Setup..."
-  ExecWait '"$TEMP\vcredist_2012_u4_x64.exe" /q /promptrestart'
-  DetailPrint "Finished Visual C++ 2012 Runtime Update 4(x64) Runtime Setup"
-  
-  Delete "$TEMP\vcredist_2012_u4_x64.exe"
-
-SectionEnd
-
 Section "Microsoft Visual C++ 2013 Runtime (x64)" SEC_CRT2013_X64
 
   SetOutPath "$TEMP"

@@ -4,6 +4,5 @@ If BizHawk crashes when you run it, it is probably because you are lacking some 
 KB2999226 (prerequisite for installing C++ 2015 runtime on win7-win8.1)
 .Net Framework v4.8
 Visual C++ 2010 SP1 Runtime (x64)
-Visual C++ 2013 Runtime (x64)
 Visual C++ 2015 Runtime (x64)
 DirectX Web Update (DirectX 9 is employed)

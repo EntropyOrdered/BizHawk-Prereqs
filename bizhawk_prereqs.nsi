@@ -92,9 +92,9 @@ Section "Microsoft Visual C++ 2015 Runtime (x64)" SEC_CRT2015_X64
 
 SectionEnd
 
-Section "MS .NET Framework 4.6.1" SecFramework
+Section "MS .NET Framework 4.8" SecFramework
 
-	!insertmacro CheckNetFramework 461
+	!insertmacro CheckNetFramework 48
  
 SectionEnd
 

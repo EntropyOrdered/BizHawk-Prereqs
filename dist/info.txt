@@ -3,7 +3,7 @@ Visual C++ 2010 SP1 Runtime (x64)
 Visual C++ 2012 Runtime Update 4 (x64)
 Visual C++ 2013 Runtime (x64)
 Visual C++ 2015 Runtime (x64)
-.Net Framework v4.6.1
+.Net Framework v4.8
 DirectX Installer  (since the Web Update fails sometimes; 
 >> includes D3DX9 31 and 43, XInput, and XAudio
 DirectX Web Update (installs dozens of packages, or maybe none, luck of the draw really)

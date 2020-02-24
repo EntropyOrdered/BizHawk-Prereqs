@@ -1,6 +1,6 @@
-KB2999226 (prerequisite for installing C++ 2015 runtime on vista-win8.1)
 Visual C++ 2010 SP1 Runtime (x64)
-Visual C++ 2015 Runtime (x64)
+KB2999226 (prerequisite for installing 'UCRT' on vista-win8.1)
+'Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019' (x64)
 .Net Framework v4.8
 DirectX Installer  (since the Web Update fails sometimes; 
 >> includes D3DX9 31 and 43, XInput, and XAudio

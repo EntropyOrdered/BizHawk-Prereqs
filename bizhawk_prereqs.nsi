@@ -30,7 +30,7 @@ LicenseData "dist\info.txt"
 Page license
 Page instfiles
 
-Section "KB2999226 (prerequisite for installing C++ 2015 runtime on win7-win8.1)" SEC_KB2999226
+Section "KB2999226 (prerequisite for installing 'UCRT' on win7-win8.1)" SEC_KB2999226
   SetOutPath "$TEMP"
   File "dist\UCRT\Windows6.1-KB2999226-x64.msu"
   File "dist\UCRT\Windows8.1-KB2999226-x64.msu"
@@ -56,15 +56,15 @@ Section "Microsoft Visual C++ 2010 SP1 Runtime (x64)" SEC_CRT2010_SP1_X64
 
 SectionEnd
 
-Section "Microsoft Visual C++ 2015 Runtime (x64)" SEC_CRT2015_X64
+Section "'Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019' (x64)" SEC_CRTULTIMATE_X64
 
   SetOutPath "$TEMP"
-  File "dist\vcredist_2015_x64.exe"
-  DetailPrint "Running Visual C++ 2015 Runtime SP1 (x64) Setup..."
-  ExecWait '"$TEMP\vcredist_2015_x64.exe" /quiet'
-  DetailPrint "Finished Visual C++ 2015 Runtime SP1 (x64) Runtime Setup"
+  File "dist\VC_redist.x64.exe"
+  DetailPrint "Running 'Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019' (x64) Setup..."
+  ExecWait '"$TEMP\VC_redist.x64.exe" /quiet'
+  DetailPrint "Finished 'Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019' (x64) Setup"
   
-  Delete "$TEMP\vcredist_2015_x64.exe"
+  Delete "$TEMP\VC_redist.x64.exe"
 
 SectionEnd
 

@@ -121,6 +121,8 @@ DownloadDotNET${FrameworkVersion}:
 	${EndIf}
 
 	DetailPrint "Pausing installation while downloaded .NET Framework installer runs."
+	DetailPrint "PLEASE WAIT! This can take a while."
+	DetailPrint "Also, it might need to reboot. This installer will block that. You can cancel the reboot then, but please do consider rebooting soon."
 	ExecWait '$TEMP\dotnetfx.exe /q /c:"install /q"'
 
 	DetailPrint "Completed .NET Framework install/update. Removing .NET Framework installer."
